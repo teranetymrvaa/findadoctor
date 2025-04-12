@@ -18,8 +18,19 @@ nav {
   color: white;
 }
 .container {
-  margin: 0 35px;
+  margin: 0 auto;
   max-width: 1200px;
+}
+.darkMode {
+  color: white !important;
+  background-color: rgb(6, 6, 6) !important;
+}
+.darkMode #card {
+  border: 1px solid white;
+}
+.darkMode nav {
+  background-color: white;
+  color: black;
 }
 
 .nav-left {
@@ -159,4 +170,67 @@ footer {
   gap: 8px;
   color: white;
   font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #cards {
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+  #card {
+    width: 100%;
+  }
+  .nav-right {
+    display: none;
+  }
+  .health {
+    display: none;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-left {
+    margin-bottom: 10px;
+  }
+  #search-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+  #search-sec input {
+    width: 100%;
+  }
+  #search-sec button {
+    width: 100%;
+  }
+  .abunelik input {
+    width: 100%;
+  }
+  .tanitim-text {
+    font-size: 20px;
+  }
+  .tanitim h4 {
+    font-size: 18px;
+  }
+  .tanitim {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tanitim-text {
+    text-align: center;
+  }
+  .social-media {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-text {
+    text-align: center;
+    font-size: 13px;
+  }
+  .aboneol {
+    margin-top: 5px;
+  }
 }
